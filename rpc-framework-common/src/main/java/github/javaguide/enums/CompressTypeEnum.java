@@ -19,6 +19,7 @@ public enum CompressTypeEnum {
     public static String getName(byte code) {
         for (CompressTypeEnum c : CompressTypeEnum.values()) {
             if (c.getCode() == code) {
+                System.out.println(code);
                 return c.name;
             }
         }
